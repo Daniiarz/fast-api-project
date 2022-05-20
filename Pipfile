@@ -1,0 +1,31 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+databases = "*"
+asyncpg = "*"
+psycopg2-binary = "*"
+sqlalchemy = "==1.4.32"
+pydantic = {extras = ["dotenv"], version = "*"}
+uvloop = "*"
+redis = "*"
+httptools = "*"
+websockets = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+python-multipart = "*"
+python-jose = {extras = ["cryptography"], version = "*"}
+httpx = "*"
+googletrans = "*"
+alembic = "*"
+pyserial = "*"
+
+[dev-packages]
+mypy = "*"
+google-cloud-translate = "*"
+
+[requires]
+python_version = "3.10"
